@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  app:
+    image: dest-tcp
+    ports:
+      - "5400:5400"
+    volumes:
+      - d:/docker-sandbox/dest-tcp/.env:/usr/src/app/.env
+    restart: unless-stopped
