@@ -93,8 +93,8 @@ export class TcpServerService {
   }
 
   private async sendJsonToApi(jsonData: string): Promise<void> {
-    // const apiUrl = `http://${process.env.IP_OUTPUT}:3000/api/acm/input`; // ใส่ URL ของ API ที่ต้องการส่งข้อมูล
-    const apiUrl = `http://127.0.0.1:3000/api/acm/input`; // ใส่ URL ของ API ที่ต้องการส่งข้อมูล
+    const apiUrl = `http://${process.env.IP_OUTPUT}:3000/api/acm/input`; // ใส่ URL ของ API ที่ต้องการส่งข้อมูล
+    // const apiUrl = `http://127.0.0.1:3000/api/acm/input`; // ใส่ URL ของ API ที่ต้องการส่งข้อมูล
 
     console.log(apiUrl);
     try {
