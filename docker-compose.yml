@@ -1,9 +1,9 @@
-version: '3.8'
+version: '3.9'
 services:
   app:
-    image: dest-tcp
+    image: dest-tcp:latest
     ports:
-      - "5400:5400"
-    volumes:
-      - d:/docker-sandbox/dest-tcp/.env:/usr/src/app/.env
-    restart: unless-stopped
+      - 5400:5400
+    environment:
+      IP_OUTPUT: 10.19.4.8
+    restart: always
